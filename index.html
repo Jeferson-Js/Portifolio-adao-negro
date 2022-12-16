@@ -36,11 +36,16 @@
         <script
             nomodule
             src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     </head>
     <body>
-
         <aside class="bg-warning">
-            <ion-icon name="menu" id="menu-mobile" class="text-bg-dark text-warning" onclick="menuMobile(this)"></ion-icon>
+            <ion-icon
+                name="menu"
+                id="menu-mobile"
+                class="text-bg-dark text-warning"
+                onclick="menuMobile(this)"></ion-icon>
             <figure>
                 <img src="./imagens/logo-user.webp" alt="logo" class="logo" />
             </figure>
@@ -67,9 +72,9 @@
                         <li class="mb-2">
                             <a
                                 class="text-decoration-none text-dark"
-                                href="#galeria"
+                                href="#combate"
                                 ><i class="bi bi-card-checklist m-2"></i
-                                >Galeria</a
+                                >Combate</a
                             >
                         </li>
                     </ul>
@@ -79,7 +84,10 @@
 
         <main>
             <section id="inicio">
-                <h1 class="text-warning">Adão Negro</h1>
+                <h1
+                    class="text-warning rounded-5 d-flex justify-content-center w-75">
+                    Adão Negro
+                </h1>
             </section>
             <section id="sobre">
                 <h2 class="text-warning">Sobre</h2>
@@ -95,7 +103,7 @@
                             <h3 class="mb-1 text-warning">
                                 Adão <span class="text-black">Negro</span>
                             </h3>
-                            <p class="text-black mt-2 mb-5">
+                            <p class="text-white mt-2 mb-5">
                                 Aqui, Teth-Adam também era um escravo em
                                 Kahndaq, que vivia junto com seu povo sob o
                                 comando de um faraó impiedoso e cruel, que
@@ -128,13 +136,29 @@
                     </div>
                 </div>
             </section>
-            <section id="galeria">
-                <h2 class="text-warning">Galeria</h2>
+            <section id="combate">
+                <h2 class="text-warning">Combate</h2>
+                <div class="container-md">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="./imagens/adao-voando.jpg" class="img-thumbnail mt-4 " alt="Adão Negro">
+                            <h3 class="text-center text-black mt-5 mb-3">Adão Negro</h3>
+                            <p class="text-center text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium numquam illo corporis voluptates libero, officiis iusto mollitia consectetur dicta saepe harum magnam optio adipisci exercitationem dolorem natus. Et, magnam odit.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="./imagens/shazam.jpg" class="img-thumbnail shazam mt-4" alt="Shazan" >
+                            <h3 class="text-center text-warning mt-3 mb-3">Shazam</h3>
+                            <p class="text-center text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, similique est! Corporis omnis magni saepe quis reiciendis at quas a nihil atque. Optio odit quis temporibus reiciendis minus totam accusantium?</p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
 
         <footer>
-            <p class="text-warning">&copy; copyright <strong>Oliveira.js</strong></p>
+            <p class="text-warning">
+                &copy; copyright <strong>Oliveira.js</strong>
+            </p>
         </footer>
 
         <script src="./scripts/scripts.js"></script>
